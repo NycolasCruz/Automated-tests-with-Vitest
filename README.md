@@ -1,28 +1,20 @@
-<h1 align="center">React Boilerplate</h1>
+<h1 align="center">Testes automatizados com Jest</h1>
 
 ## 🚀 Principais tecnologias utilizadas
 
 - React
-- Vite
-- TypeScript
-- Prettier
-- ESLint
-- Storybook
-- Tailwindcss
-- Flowbite
+- Vitest
+- React Testing Library
 
 ## 🖥️ Sobre
 
-<p align="justify">Projeto open source de um boilerplate de uma aplicação React gerada com Vite, que possui ESLint + Prettier, aliases path, Storybook, sidebar e navbar responsivos, dark mode e tailwind.</p>
+<p align="justify">Projeto voltado para o estudo de testes automatizados utilizando Vitest e React Testing Library.</p>
 
 ## 🔧 Principais comandos utilizados
 
-- yarn create vite (Vite)
-- yarn create @eslint/config (ESLint)
-- yarn add eslint-config-prettier prettier -D (Prettier)
-- npx storybook@latest init (Storybook)
-- yarn add -D tailwindcss postcss autoprefixer (Tailwindcss)
-- npx tailwindcss init -p (Tailwindcss init)
+```
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/react jsdom vitest @vitest/coverage-v8
+```
 
 ## 🕹️ Instalação
 
@@ -32,7 +24,7 @@ Instale também o Yarn caso não o tenha com o comando ````npm i -g yarn````, em
 
 Utilize o comando ````yarn```` para instalar os pacotes necessários.
 
-OBS: o deploy desta aplicação está sendo feito <a href="https://react-boilerplatee.netlify.app" target="_blank">neste link</a>.
+E por fim, execute os testes com o comando ````yarn test````.
 
 ## 🐧 Autor
 
