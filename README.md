@@ -13,7 +13,7 @@
 ## 🔧 Principais comandos utilizados
 
 ```
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/react jsdom vitest @vitest/coverage-v8
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/react jsdom vitest @testing-library/user-event @vitest/coverage-v8
 ```
 
 ## 🕹️ Instalação
