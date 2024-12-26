@@ -8,6 +8,7 @@ jobs:
   run_tests:
     runs-on: ubuntu-latest
     if: github.event.issue.pull_request && github.event.comment.body == 'test'
+    permissions: write-all
 
     steps:
       - name: Get PR number
