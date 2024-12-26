@@ -5,16 +5,12 @@
 - React
 - Vitest
 - React Testing Library
+- Github Actions
+- Husky
 
 ## 🖥️ Sobre
 
-<p align="justify">Projeto voltado para o estudo de testes automatizados utilizando Vitest e React Testing Library.</p>
-
-## 🔧 Principais comandos utilizados
-
-```
-yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/react jsdom vitest @testing-library/user-event @vitest/coverage-v8
-```
+<p align="justify">Projeto focado no estudo de testes automatizados, utilizando Vitest, React Testing Library, GitHub Actions e a ferramenta Husky para o gerenciamento de Git hooks.</p>
 
 ## 🕹️ Instalação
 
