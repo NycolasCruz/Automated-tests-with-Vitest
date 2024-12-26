@@ -16,11 +16,11 @@
 
 Certifique-se de ter o NodeJS instalado na sua máquina, caso não tenha, instale seu executável clicando neste <a href="https://nodejs.org/pt-br/download/">link</a>.
 
-Instale também o Yarn caso não o tenha com o comando ````npm i -g yarn````, em seguida clone o projeto.
+Instale também o Yarn caso não o tenha com o comando `npm i -g yarn`, em seguida clone o projeto.
 
-Utilize o comando ````yarn```` para instalar os pacotes necessários.
+Utilize o comando `yarn` para instalar os pacotes necessários.
 
-E por fim, execute os testes com o comando ````yarn test````.
+E por fim, execute os testes com o comando `yarn test`.
 
 ## 🐧 Autor
 
