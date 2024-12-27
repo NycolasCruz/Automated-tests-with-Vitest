@@ -11,14 +11,14 @@ for FILE in $STAGED_FILES; do
     # Verificando se o arquivo tem uma extensão suportada pelo Prettier
     if [[ $FILE =~ \.(js|jsx|ts|tsx|css|scss|json|md|html|yml|yaml)$ ]]; then
         echo -e "${BIPink}🌸 Formatando ${FILE}... ${NC}"
-        yarn prettier --write "${FILE}" > /dev/null 2>&1
+        yarn prettier --write "${FILE}" > /dev/null >&1
         git add "${FILE}"
     fi
 
     # Verificando com ESLint apenas arquivos com extensões específicas
     if [[ $FILE =~ \.(js|jsx|ts|tsx|css|scss)$ ]]; then
         echo -e "${BIBlue}🔍 Verificando ${FILE} com ESLint... ${NC}"
-        yarn eslint "${FILE}" --fix --max-warnings=0 > /dev/null 2>&1
+        yarn eslint "${FILE}" --fix --max-warnings=0 > /dev/null >&1
         git add "${FILE}"
     fi
 done
