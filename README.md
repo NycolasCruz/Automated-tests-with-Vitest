@@ -12,6 +12,12 @@
 
 <p align="justify">Projeto focado no estudo de testes automatizados, utilizando Vitest, React Testing Library, GitHub Actions e a ferramenta Husky para o gerenciamento de Git hooks.</p>
 
+## 🔧 Principais comandos utilizados
+
+```
+yarn add -D @testing-library/dom @testing-library/jest-dom @testing-library/react jsdom vitest @testing-library/user-event @vitest/coverage-v8
+```
+
 ## 🕹️ Instalação
 
 Certifique-se de ter o NodeJS instalado na sua máquina, caso não tenha, instale seu executável clicando neste <a href="https://nodejs.org/pt-br/download/">link</a>.
