@@ -1,6 +1,8 @@
 import { FormEvent, useState } from "react";
 import axios from "axios";
 
+import "./styles.scss";
+
 type Props = {
 	list: string[];
 	setList: (list: string[]) => void;
@@ -36,22 +38,18 @@ export function NewItem({ list, setList }: Props) {
 	}
 
 	return (
-		<>
-			<form
-				style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem" }}
-			>
-				<label htmlFor="new-item">Adicione um novo item à lista</label>
+		<form>
+			<label htmlFor="new-item">Adicione um novo item à lista</label>
 
-				<input id="new-item" value={value} onChange={(event) => setValue(event.target.value)} />
+			<input id="new-item" value={value} onChange={(event) => setValue(event.target.value)} />
 
-				<div style={{ display: "flex", gap: "0.5rem" }}>
-					<button disabled={!value} onClick={(event) => handleAddingTheItemToTheList(event)}>
-						Adicionar
-					</button>
+			<div id="add-button">
+				<button disabled={!value} onClick={(event) => handleAddingTheItemToTheList(event)}>
+					Adicionar
+				</button>
 
-					<button onClick={handleAddingRandomItemsToTheList}>Adicionar dados aleatórios</button>
-				</div>
-			</form>
-		</>
+				<button onClick={handleAddingRandomItemsToTheList}>Adicionar dados aleatórios</button>
+			</div>
+		</form>
 	);
 }

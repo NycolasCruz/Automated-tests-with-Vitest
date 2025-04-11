@@ -1,10 +1,11 @@
+import "./styles.scss";
+
 type Props = {
 	list: string[];
-	setList?: (list: string[]) => void;
-	removeButton?: boolean;
+	setList: (list: string[]) => void;
 };
 
-export function List({ list, setList, removeButton }: Props) {
+export function List({ list, setList }: Props) {
 	function handleTheRemovalOfTheItemFromTheList(index: number) {
 		const updatedList = [...list];
 
@@ -16,22 +17,12 @@ export function List({ list, setList, removeButton }: Props) {
 
 	return (
 		<ul>
-			{removeButton ? (
-				<>
-					{list.map((item, index) => (
-						<li key={`item-${index}`}>
-							{item}{" "}
-							<button onClick={() => handleTheRemovalOfTheItemFromTheList(index)}>Remover</button>
-						</li>
-					))}
-				</>
-			) : (
-				<>
-					{list.map((item, index) => (
-						<li key={`item-${index}`}>{item}</li>
-					))}
-				</>
-			)}
+			{list.map((item, index) => (
+				<li key={`item-${index}`}>
+					{item}
+					<button onClick={() => handleTheRemovalOfTheItemFromTheList(index)}>Remover</button>
+				</li>
+			))}
 		</ul>
 	);
 }
