@@ -32,8 +32,8 @@ export function NewItem({ list, setList }: Props) {
 			const newItems = data.map((item) => item.title);
 
 			setList(list.concat(newItems));
-		} catch (error) {
-			console.error(error);
+		} catch {
+			alert("Erro ao adicionar itens aleatórios");
 		}
 	}
 

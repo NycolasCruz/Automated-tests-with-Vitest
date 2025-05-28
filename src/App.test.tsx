@@ -21,6 +21,14 @@ describe("manipulating items", () => {
 		await screen.findByText("item 1");
 	});
 
+	it("should add random items to the list", async () => {
+		const addButton = screen.getByRole("button", { name: "Adicionar dados aleatórios" });
+
+		await userEvent.click(addButton);
+
+		await screen.findByText("delectus aut autem");
+	});
+
 	it("should remove an item from the list", async () => {
 		await userEvent.type(input, "item 1");
 		await userEvent.click(addButton);
