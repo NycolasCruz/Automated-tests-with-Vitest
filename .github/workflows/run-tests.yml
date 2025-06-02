@@ -1,6 +1,7 @@
 name: Run tests
 
 on:
+  workflow_dispatch:
   issue_comment:
     types: [created]
 
